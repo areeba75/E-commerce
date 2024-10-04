@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { LuPlusCircle } from "react-icons/lu";
 import { MdArrowBack } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
-import React from 'react'
+import React from 'react';
+import { countryCodes } from './AddProductsComponents/CountryCodeInput';
 
 const styles = {
   h1:{
@@ -220,7 +221,7 @@ const Status = ({ onStatusChange }) => {
   );
 };
 
-import { countryCodes } from './AddProductsComponents/CountryCodeInput';
+
 
 const Country = () => {
   const [selectedCode, setSelectedCode] = useState('');
@@ -228,6 +229,10 @@ const Country = () => {
 
   const handleSelectCode = (code: string) => {
     setSelectedCode(code);
+    setShowDropdown(false);
+  };
+  const handleSelectName = (name: string) => {
+    setSelectedCode(name);
     setShowDropdown(false);
   };
   return (
@@ -251,7 +256,7 @@ const Country = () => {
         <div
           style={{
             position: 'absolute',
-            top: '100%',
+            top: '30px',
             left: 0,
             width: '100%',
             maxHeight: '200px',
@@ -264,7 +269,7 @@ const Country = () => {
           {countryCodes.map((country, index) => (
             <div
               key={index}
-              onClick={() => handleSelectCode(country.code)}
+              onClick={() =>{ handleSelectCode(country.code); handleSelectName(country.name)}}
               style={{ width: '100%', padding: '8px', cursor: 'pointer', borderBottom: '1px solid #ddd' }}
             >
               {country.name}

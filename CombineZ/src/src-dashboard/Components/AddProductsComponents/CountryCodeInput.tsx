@@ -201,6 +201,10 @@ const CountryCodeInput: React.FC = () => {
     setSelectedCod(code);
     setShowDropdown(false);
   };
+  const handleSelectName = (name: string) => {
+    setSelectedCod(name);
+    setShowDropdown(false);
+  };
 
   return (
     <div className='relative w-[80px]' >
@@ -222,10 +226,11 @@ const CountryCodeInput: React.FC = () => {
           {countryCodes.map((country, index) => (
             <div
               key={index}
-              onClick={() => handleSelectCod(country.code)}
+              onClick={() => {handleSelectCod(country.code); handleSelectName(country.name)}}
               style={{ padding: '8px', cursor: 'pointer', borderBottom: '1px solid #ddd' }}
             >
               ({country.code})
+              ({country.name})
             </div>
           ))}
         </div>

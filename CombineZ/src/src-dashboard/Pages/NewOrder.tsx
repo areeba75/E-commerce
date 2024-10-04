@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
-import Status from "../../src-dashboard/Components/NewProduct"
 import { LuPlusCircle } from "react-icons/lu";
 import { MdArrowBack } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import Quill from 'quill';
 import 'quill/dist/quill.snow.css';
 import { countryCodes } from '../Components/AddProductsComponents/CountryCodeInput';
-import React from 'react'
-import "./Dashboard.css"
+import React from 'react';
+import "./Dashboard.css";
 
 
 
@@ -42,6 +41,10 @@ const NewProduct = () => {
     setSelectedCod(code);
     setShowDropdon(false);
   };
+  const handleSelectName = (name: string) => {
+    setSelectedCod(name);
+    setShowDropdon(false);
+  };
 
   
   const [isCheckd, setIsCheckd] = useState(true);
@@ -68,8 +71,8 @@ const NewProduct = () => {
     setShowDropdown(false);
   };
 
-  const editorRef = useRef(null);
-  const toolbarRef = useRef(null);
+  const editorRef = useRef<HTMLDivElement | null>(null);
+  const toolbarRef = useRef<HTMLDivElement | null>(null);
   const quillInstance = useRef<Quill | null>(null); 
 
   useEffect(() => {
@@ -88,7 +91,7 @@ const NewProduct = () => {
   
       quillInstance.current = new Quill(editorRef.current, {
         theme: 'snow',
-        modules: { toolbar: toolbarOptions } // Updated toolbar reference to toolbarOptions
+        modules: { toolbar: toolbarRef.current } // Updated toolbar reference to toolbarOptions
       });
     }
   
@@ -104,17 +107,14 @@ const NewProduct = () => {
   return (
     <>
     <section className="sm:px-5 pb-24">
-      
-    
       <div className='flex justify-center lg:flex-row flex-col py-5'>
         <div className='flex items-center w-3/4'>
-          <Link to={'/admin/order'}><MdArrowBack className='text-xl' /></Link>
+          <Link to={'/admin/order'}> <span className='hover:bg-[#D4D4D4]'><MdArrowBack className='text-xl' /></span> </Link>
           <h1 className="text-lg font-bold p-2 text-black">Add Order</h1>
         </div>
       </div>
 
       <div className='flex flex-col xl:flex-row justify-center gap-4'>
-
         <div className="w-full xl:w-2/5 space-y-4 m-auto md:m-0">
           <div className="bg-white shadow-lg sm:rounded-lg px-2 py-4 border">
             <div>
@@ -188,10 +188,7 @@ const NewProduct = () => {
                             readOnly
                             placeholder="Product"
                             className='w-full p-2 border border-black rounded-lg'
-                            
-                          />
-
-                        
+                            />
                           {showDropdown && (
                             <div
                               style={{
@@ -212,7 +209,7 @@ const NewProduct = () => {
                                   onClick={() => handleSelectCode(country.code)}
                                   className='p-2 border-b cursor-pointer'
                                 >
-                                  {country.name}
+                                  {country.code}
                                 </div>
                               ))}
                             </div>
@@ -223,7 +220,7 @@ const NewProduct = () => {
 
 
                 </div>
-                <p>
+                <p className='text-sm'>
                   Determines tax rates and adds metafields to improve search,
                   filters, and cross-channel sales.
                 </p>
@@ -405,7 +402,7 @@ const NewProduct = () => {
                  <div
                    style={{
                      position: 'absolute',
-                     top: '100%',
+                     top: '25px',
                      left: 0,
                      width: '100%',
                      maxHeight: '200px',
@@ -418,7 +415,7 @@ const NewProduct = () => {
                    {countryCodes.map((country, index) => (
                      <div
                        key={index}
-                       onClick={() => handleSelectCod(country.code)}
+                       onClick={() => handleSelectName(country.name)}
                        style={{ width: '100%', padding: '8px', cursor: 'pointer', borderBottom: '1px solid #ddd' }}
                      >
                        {country.name}

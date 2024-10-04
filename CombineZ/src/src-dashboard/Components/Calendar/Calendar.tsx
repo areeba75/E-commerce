@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -74,7 +74,7 @@ const DateFilterContainer = ({closeHandler}:any) => {
 
           <div className="flex">
             <div className="p-1 m-auto hidden lg:block">
-              <h2 className="text-lg font-semibold mb-4">Select From Date</h2>
+              <h2 className="text-lg font-semibold mb-4 text-black">Select From Date</h2>
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
@@ -87,7 +87,7 @@ const DateFilterContainer = ({closeHandler}:any) => {
 
             <div className="flex p-1 m-auto">
               <div>
-                <h2 className="text-lg font-semibold mb-4">Selected Date</h2>
+                <h2 className="text-lg font-semibold mb-4 text-black">Selected Date</h2>
                 <DatePicker
                   selected={selectedDate}
                   onChange={(date) => setSelectedDate(date)}

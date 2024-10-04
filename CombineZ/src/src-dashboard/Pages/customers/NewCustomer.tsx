@@ -246,7 +246,7 @@ const NewCustomer = () => {
   return (
     <section className=" sm:px-5 pb-24 m-auto">
       <div className="flex justify-center">
-        <div className="py-5 w-4/5">
+        <div className="py-5 w-4/6">
           <h1 className="flex text-lg font-bold items-center text-black">
             <span className="p-[6px] hover:bg-[#D4D4D4] mr-2 rounded-lg cursor-pointer">
               <Link to={"/admin/customer"}>
@@ -436,7 +436,7 @@ const NewCustomer = () => {
                         <div
                           style={{
                             position: "absolute",
-                            top: "100%",
+                            top: "25px",
                             left: 0,
                             width: "100%",
                             maxHeight: "200px",

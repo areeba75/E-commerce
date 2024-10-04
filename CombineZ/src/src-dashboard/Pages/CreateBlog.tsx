@@ -275,7 +275,7 @@ useEffect(() => {
                     type="text"
                     className="p-2 border border-black rounded-lg"
                   />
-                  <p>0 of 70 characters used</p>
+                  <p className="text-sm">0 of 70 characters used</p>
                 </div>
 
                 <div className="flex flex-col space-y-1">
@@ -284,7 +284,7 @@ useEffect(() => {
                     rows={4}
                     className="p-2 border border-black rounded-lg"
                   />
-                  <p>0 of 320 characters used</p>
+                  <p className="text-sm">0 of 320 characters used</p>
                 </div>
 
                 <div className="flex flex-col space-y-1">
@@ -344,7 +344,7 @@ useEffect(() => {
 
           <div>
             <div className="relative">
-              <label className="text-base p-2" htmlFor="">
+              <label className="text-base" htmlFor="">
                 Blog
               </label>
               <input

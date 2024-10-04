@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import React from 'react';
-import order_main from '../Components/imagesAdmin/order_main.png'
-import arrow_down from '../Components/arrow_down.png'
-import ordermain from "../Components/imagesAdmin/order_main.png"
+import order_main from '../Components/imagesAdmin/order_main.png';
+import arrow_down from '../Components/arrow_down.png';
 import '../indexAdmin.scss';
 import { Link } from 'react-router-dom';
 import { RxEyeOpen } from "react-icons/rx";
@@ -89,24 +88,21 @@ const Order = () => {
       setVisibleColumns(newVisibleColumns);
     };
 
-
     const [isOpen, setIsOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState('Today');
-  
     const toggleDropdown = () => setIsOpen(!isOpen);
   
     const handleOptionClick = (option:string) => {
       setSelectedOption(option);
       setIsOpen(false); // Close 
-     
-
-      
     };
+
     const [moreAction, setMoreAction] = useState(false);
     const [showAnalytic, setShowAnalytic] = useState(false);
     const [orders, setOrders] = useState([]); 
     const dropdownRef = useRef<HTMLUListElement>(null);
 
+    
     const openDropDown = () => {
         setMoreAction(!moreAction);
     };
@@ -115,6 +111,11 @@ const Order = () => {
         setShowAnalytic(!showAnalytic);
         setMoreAction(false);
     };
+    const showMoreAction = () =>{
+      if(!moreAction){
+        openDropDown()
+      }
+    }
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -153,16 +154,16 @@ const Order = () => {
                 </div>
                 <div className='md:w-[40%]'>
                     <div className='flex flex-col justify-end items-end space-y-3'>
-                        <button onClick={openDropDown} className='flex bg-[#e3e3e3] hover:bg-[#d4d4d4] text-xs font-bold rounded-lg px-2 py-1 text-[#303030]'>
+                        <button onClick={showMoreAction} className='flex bg-[#e3e3e3] hover:bg-[#d4d4d4] text-xs font-bold rounded-lg px-2 py-1 text-[#303030]'>
                             More Action <img src={arrow_down} alt="" className='h-3 w-3 m-1' />
                         </button>
 
                         {moreAction && (
                             <ul className='' ref={dropdownRef}>
                                 <li>
-                                    <a className='flex text-sm bg-white rounded-lg px-auto py-2 text-[#303030]' href="" onClick={(e) => { e.preventDefault(); openAnalytic(); openDropDown(); }}>
-                                        <RxEyeOpen className='mx-3 text-xl' />Show Analytic Bar
-                                    </a>
+                                    <div className='flex text-sm bg-white rounded-lg px-auto py-2 px-2 text-[#303030]' onClick={() => { openAnalytic(); openDropDown(); }}>
+                                        <RxEyeOpen className='mr-2 text-xl' />Show Analytic Bar
+                                    </div>
                                 </li>
                             </ul>
                         )}
@@ -314,7 +315,7 @@ const Order = () => {
                                 <IoMdAdd className="mr-1 text-lg" /> Add Order
                                 </button>
                             </Link>
-                            <Link to={"/admin/product/allProducts"}>
+                            <Link to={"/admin/prooduct/allProducts"}>
                                 <button className="rounded-lg border-2 m-auto md:m-0 bg-white hover:bg-stone-200 px-3 py-1 text-sm flex items-center">Show All Products</button>
                             </Link>
                         </div>
@@ -365,7 +366,7 @@ const Order = () => {
                         </thead>
                         <tbody>
                           {ordrs.map((order) => (
-                            <tr key={order.id}> 
+                            <tr key={order}> 
                               {columnsData.map((column, index) =>
                                 visibleColumns[index] && (
                                   <td key={index} className="border px-4 py-2">

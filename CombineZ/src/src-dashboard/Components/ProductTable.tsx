@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import { IoFilterSharp } from "react-icons/io5";
-import order_main from '../assets/order_main.png';
+// import order_main from '../assets/order_main.png';
 import ProductAnalyticBar from './ProductAnalyticBar';
 
 const columnsData = [
-  "id", "title", "description", "vendor", "product_type", "tags", "variants", "images", "price", 
-  "compare_at_price", "inventory_quantity", "availability", "weight", "weight_unit", 
+  "id", "title", "description", "vendor", "product_type", "tags", "variants", "images", "price",
+  "compare_at_price", "inventory_quantity", "availability", "weight", "weight_unit",
   "dimensions", "height", "width", "depth", "seo_title", "seo_description", "url_handle", "template"
 ];
 
@@ -67,7 +67,9 @@ const ProductTable = () => {
         <p className='text-2xl font-bold text-[#303030]'>Products</p>
       </div>
 
-      <ProductAnalyticBar className="mb-8" /> 
+      <div className="mb-8">
+        <ProductAnalyticBar />
+      </div>
 
       <div className="bg-white p-4 rounded shadow mt-4">
         <div className="flex justify-end mb-4" ref={dropdownRef}>
@@ -99,7 +101,7 @@ const ProductTable = () => {
 
         {products.length === 0 ? (
           <div className="bg-white py-3 rounded-xl text-center mb-6">
-            <img src={order_main} className="m-auto" alt="Order Placeholder" />
+            <img src="" className="m-auto" alt="Order Placeholder" />
             <div className="text-center">
               <p className="text-base font-semibold">Your Products Will Show Here</p>
               <p className="text-sm w-full md:w-1/3 m-auto py-4">
@@ -123,10 +125,10 @@ const ProductTable = () => {
               </thead>
               <tbody>
                 {products.map((product) => (
-                  <tr key={product.id} className="hover:bg-gray-100 transition-colors">
+                  <tr key={product} className="hover:bg-gray-100 transition-colors">
                     {columnsData.map((column, index) =>
                       visibleColumns[index] && (
-                        <td key={index} className="border px-6 py-4"> 
+                        <td key={index} className="border px-6 py-4">
                           {product[column] !== null ? product[column].toString() : "N/A"}
                         </td>
                       )
