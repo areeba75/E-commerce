@@ -1,5 +1,5 @@
 import React from "react";
-import "../componentes/Miguel.css"
+import "./Miguel.css"
 const ArtServices = () => {
   return (
     <>

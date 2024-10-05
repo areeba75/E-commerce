@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 // import { IoMenu } from "react-icons/io5";
-// import ResponsiveMenuBar from '../../component/ResponsiveMenuBar'
+// import ResponsiveMenuBar from '../../components/ResponsiveMenuBar'
 
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 // import { MdClose } from "react-icons/md";
@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 w-full bg-black z-50">
       <div className="px-[56px] bg-color">
-        <p className="text-[#ffffff] my-0 py-[8px] text-[20px] font-bold  text-center">
+        <p className="text-[#ffffff] my-0 py-[8px] text-[20px] font-bold list text-center">
           Visit us at 6220 E Cave Creek rd, Cave Creek AZ 85331 (480) 595-2671
         </p>
       </div>

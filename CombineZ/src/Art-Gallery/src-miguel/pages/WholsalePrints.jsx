@@ -1,12 +1,12 @@
 import React from 'react'
-import wholsale from './wholesale.webp'
-import PaintingsDistribution from '../component/PaintingsDistribution'
-import WholesaleArtwork from '../component/WholesaleArtwork'
-import InteriorDesign from '../component/InteriorDesign'
-import ArtJourney from '../component/ArtJourney'
-import ConsultingFAQ from '../component/ConsultingFAQ'
-import ExploreProducts from '../component/ExploreProducts'
-import "../Miguel.css"
+import wholsale from '../images/wholesale.webp'
+import PaintingsDistribution from '../components/PaintingsDistribution'
+import WholesaleArtwork from '../components/WholesaleArtwork'
+import InteriorDesign from '../components/InteriorDesign'
+import ArtJourney from '../components/ArtJourney'
+import ConsultingFAQ from '../components/ConsultingFAQ'
+import ExploreProducts from '../components/ExploreProducts'
+import "./Miguel.css"
 
 
 const WholsalePrints = () => {

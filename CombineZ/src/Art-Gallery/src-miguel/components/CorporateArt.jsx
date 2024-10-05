@@ -1,5 +1,5 @@
 import React from "react";
-import art_corporate from "../art_corporate.webp";
+import art_corporate from "../images/art_corporate.webp";
 
 const CorporateArt = () => {
   return (

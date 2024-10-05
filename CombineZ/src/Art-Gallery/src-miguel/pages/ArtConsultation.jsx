@@ -1,11 +1,11 @@
 import React from 'react'
-import FreeArt from '../component/FreeArt'
-import CorporateArt from '../component/CorporateArt'
-import ArtCuration from '../component/ArtCuration'
-// import CallUs from '../component/CallUs'
-import ConsultingFAQ from '../component/ConsultingFAQ'
+import FreeArt from '../components/FreeArt'
+import CorporateArt from '../components/CorporateArt'
+import ArtCuration from '../components/ArtCuration'
+// import CallUs from '../components/CallUs'
+import ConsultingFAQ from '../components/ConsultingFAQ'
 import { Link } from 'react-router-dom'
-import "../Miguel.css"
+import "./Miguel.css"
 
 const ArtConsultation = () => {
   return (

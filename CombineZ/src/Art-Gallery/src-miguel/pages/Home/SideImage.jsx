@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../../images/Tres-Donkeys.webp";
+import img1 from "../../images/Tres-Donkeys.webp";
 
 
 const SideImage = () => {

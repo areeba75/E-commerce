@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import abs1 from "../../images/abstract/abs1.webp";
-import abs2 from "../../images/abstract/abs2.webp";
-import abs3 from "../../images/abstract/abs3.webp";
-import abs4 from "../../images/abstract/abs4.webp";
-import abs5 from "../../images/abstract/abs5.webp";
-import abs6 from "../../images/abstract/abs6.webp";
-import abs7 from "../../images/abstract/abs7.webp";
-import abs8 from "../../images/abstract/abs8.webp";
+import abs1 from "../images/abstract/abs1.webp";
+import abs2 from "../images/abstract/abs2.webp";
+import abs3 from "../images/abstract/abs3.webp";
+import abs4 from "../images/abstract/abs4.webp";
+import abs5 from "../images/abstract/abs5.webp";
+import abs6 from "../images/abstract/abs6.webp";
+import abs7 from "../images/abstract/abs7.webp";
+import abs8 from "../images/abstract/abs8.webp";
 
-import "../Miguel.css";
+import "./Miguel.css";
 import { IoIosArrowDown } from "react-icons/io";
 
 

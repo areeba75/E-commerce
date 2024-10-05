@@ -11,7 +11,7 @@ import SideImage from "./SideImage";
 import PrintOnCanvas from "./PrintOnCanvas";
 import Navbar from "./NavbarArt";
 // import '../../indexArt.css'
-import "../../Miguel.css"
+import "../Miguel.css"
 
 
 function homePage() {
