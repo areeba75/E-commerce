@@ -1,16 +1,16 @@
 import React from "react";
 import Test from "./Test";
 import SideImage from "./SideImage";
-import Donkey1 from "../../../images/Donkey1.webp";
-import Donkey2 from "../../../images/Donkey2.webp";
-import Donkey3 from "../../../images/Donkey3.webp";
-import Donkey4 from "../../../images/Donkey4.webp";
-import Donkey5 from "../../../images/Donkey5.webp";
-import Donkey6 from "../../../images/Donkey6.webp";
-import Donkey7 from "../../../images/Donkey7.webp";
-import Donkey8 from "../../../images/Donkey8.webp";
-import Donkey9 from "../../../images/Donkey9.webp";
-import Donkey10 from "../../../images/Donkey10.webp";
+import Donkey1 from "../../images/Donkey1.webp";
+import Donkey2 from "../../images/Donkey2.webp";
+import Donkey3 from "../../images/Donkey3.webp";
+import Donkey4 from "../../images/Donkey4.webp";
+import Donkey5 from "../../images/Donkey5.webp";
+import Donkey6 from "../../images/Donkey6.webp";
+import Donkey7 from "../../images/Donkey7.webp";
+import Donkey8 from "../../images/Donkey8.webp";
+import Donkey9 from "../../images/Donkey9.webp";
+import Donkey10 from "../../images/Donkey10.webp";
 
 export const imageItems = [
   {

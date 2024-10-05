@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-import OriginalArtWork from "./component/OriginalArtWork";
+import OriginalArtWork from "../components/OriginalArtWork";
 import "./Miguel.css"
 const filterAndSort = [
   { name: "Filter & Sort" },

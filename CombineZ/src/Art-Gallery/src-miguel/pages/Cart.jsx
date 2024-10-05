@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Miguel.css"
+import "./Miguel.css"
 
 const Cart = () => {
   return (

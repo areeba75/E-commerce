@@ -1,7 +1,7 @@
 import React from "react";
-import discover from "../../../images/discover.webp";
+import discover from "../../images/discover.webp";
 import { FiChevronRight } from "react-icons/fi";
-import "../../Miguel.css"
+import "../Miguel.css";
 
 
 export const DiscoverFit = () => {

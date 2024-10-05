@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { MdCardTravel, MdClose, MdSearch } from "react-icons/md";
 import { CiUser } from "react-icons/ci";
 // import logo from "../../../ArtImage/logo.png";
-import logo from "../../../ArtImages/logo.png"
+import logo from "../../ArtImages/logo.png"
 
 import { IoMenu } from "react-icons/io5";
-import ResponsiveMenuBar from "../../component/ResponsiveMenuBar";
+import ResponsiveMenuBar from "../../components/ResponsiveMenuBar";
 
 const MiddleBar = () => {
   const [openSearch, setOpenSearch] = useState(false);

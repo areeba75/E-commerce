@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
   import { RiShoppingBag3Line } from "react-icons/ri";
-import "../componentes/Miguel.css"
+import "./Miguel.css"
 import {
   Accordion,
   AccordionHeader,

@@ -1,9 +1,9 @@
 import React from 'react';
 import AddToCard from './AddToCard';
-import Sliders from './component/Sliders';
+import Sliders from '../components/Sliders';
 import "./Miguel.css";
-import cartimg from "./cartimg.webp";
-const Products = () => {
+import cartimg from "../images/cartimg.webp";
+const Products  = () => {
   return (
     <>
       <section>

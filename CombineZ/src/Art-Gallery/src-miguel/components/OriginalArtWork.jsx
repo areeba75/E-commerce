@@ -4,9 +4,9 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdArrowBackIos } from "react-icons/md";
 import { useState } from "react";
 import { data } from "autoprefixer";
-import Donkey from "../../images/Donkey1.webp"
+import Donkey from "../images/Donkey1.webp"
 import { Link } from "react-router-dom";
-import "../Miguel.css"
+import "../pages/Miguel.css"
 const OriginalArtWork = () => {
   const itemsPerPage = 3;
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import MigualTeam from './component/MigualTeam';
-import MasterpieceDelivered from './component/MasterpieceDelivered';
-import Accordian from './component/Accordian';
-import LatestCollection from './component/LatestCollection';
+import MigualTeam from '../components/MigualTeam';
+import MasterpieceDelivered from '../components/MasterpieceDelivered';
+import Accordian from '../components/Accordian';
+import LatestCollection from '../components/LatestCollection';
 import "./Miguel.css"
 const OriginalArt = () => {
   return (

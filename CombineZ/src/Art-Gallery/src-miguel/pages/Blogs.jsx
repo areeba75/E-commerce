@@ -42,7 +42,6 @@ const Blogs = () => {
           {/* 1 */}
           <div className="grid md:grid-cols-3 gap-3 xl:w-[1184px] md:justify-evenly sm:px-7 m-auto mt-20 pt-8">
             {selectedItems.slice(0, 6).map((item, index) => (
-              <Link to="/addtocart">
                 <BlogCard
                   key={index}
                   image={item.image}
@@ -50,7 +49,6 @@ const Blogs = () => {
                   subHeading={item.suHeading}
                   author={item.author}
                 />
-              </Link>
             ))}
           </div>
           <div className="mt-20">

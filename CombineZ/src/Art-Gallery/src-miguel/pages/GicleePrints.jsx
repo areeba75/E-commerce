@@ -1,10 +1,10 @@
 import React from 'react'
-import GicleeImage from './component/GicleeImage'
-import HandPrints from './component/HandPrints'
-import FavoritePainting from './component/FavoritePainting'
-import CustomGiclee from './component/CustomGiclee'
-import Affordable from './component/Affordable'
-import GicleeFaq from './component/GicleeFaq'
+import GicleeImage from '../components/GicleeImage'
+import HandPrints from '../components/HandPrints'
+import FavoritePainting from '../components/FavoritePainting'
+import CustomGiclee from '../components/CustomGiclee'
+import Affordable from '../components/Affordable'
+import GicleeFaq from '../components/GicleeFaq'
 import "./Miguel.css"
 
 const GicleePrints = () => {

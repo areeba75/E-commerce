@@ -1,25 +1,27 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./componentes/Pages/Home/HomePage";
+import HomePage from "./pages/Home/HomePage"
+
 import MainLayout from "./layouts/MainLayout";
-import Contact from "./componentes/Pages/Contact";
-import RentingArt from "./componentes/RentingArt";
-import Cart from "./componentes/Pages/Cart";
-import Account from "./componentes/Account";
-import Abstract from "./componentes/Pages/Abstract";
-import Products from "./componentes/Products";
-import Collections from "./componentes/Collections";
-import Blogs from "./componentes/Blogs";
-import Bio from "./componentes/Bio";
-import GicleePrints from "./componentes/GicleePrints";
-import OriginalPainting from "./componentes/OriginalPainting";
-import OriginalArt from "./componentes/OriginalArt";
-import Services from "./componentes/Pages/Home/Services";
-import AddToCard from "./componentes/AddToCard";
-import ArtServices from "./componentes/ArtServices";
-import ArtConsultation from "./componentes/Pages/ArtConsultation";
-import WholsalePrints from "./componentes/Pages/WholsalePrints";
-import PrintCanvas from "./componentes/Pages/Home/PrintCanvas";
-import AddProducts from "./componentes/Pages/AddProducts";
+import Contact from "./Pages/Contact";
+
+import RentingArt from "./pages/RentingArt";
+import Cart from "./pages/Cart";
+import Account from "./pages/Account";
+import Abstract from "./pages/Abstract";
+import Products from "./pages/Products";
+import Collections from "./pages/Collections";
+import Blogs from "./pages/Blogs";
+import Bio from "./pages/Bio";
+import GicleePrints from "./pages/GicleePrints";
+import OriginalPainting from "./pages/OriginalPainting";
+import OriginalArt from "./pages/OriginalArt";
+import Services from "./pages/Home/Services";
+import AddToCard from "./pages/AddToCard";
+import ArtServices from "./pages/ArtServices";
+import ArtConsultation from "./pages/ArtConsultation";
+import WholsalePrints from "./pages/WholsalePrints";
+import PrintCanvas from "./pages/Home/PrintCanvas";
+import AddProducts from "./pages/AddProducts";
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
