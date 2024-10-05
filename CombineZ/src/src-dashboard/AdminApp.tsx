@@ -3,8 +3,8 @@ import { lazy, Suspense } from "react";
 import React from 'react';
 import Coollection from "./Pages/Coollection";
 import NewOrder from "./Pages/NewOrder";
-import Hoome from './Pages/Hoome'
-import '../src-dashboard/Pages/Dashboard.css'
+import Hoome from './Pages/Hoome';
+import '../src-dashboard/Pages/Dashboard.css';
 
 
 const Analytics = lazy(() => import('../src-dashboard/Pages/Analytics/Analytics'));
@@ -25,9 +25,7 @@ const DiscountTable = lazy(() => import("../src-dashboard/Components/DiscountTab
 
 
 
-
 function AdminApp() {
-
 
 
   return (

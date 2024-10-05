@@ -121,7 +121,7 @@ const DynamicTable = () => {
           </thead>
           <tbody>
             {ordrs.map((order) => (
-              <tr key={order.id}> 
+              <tr key={order}> 
                 {columnsData.map((column, index) =>
                   visibleColumns[index] && (
                     <td key={index} className="border px-4 py-2">

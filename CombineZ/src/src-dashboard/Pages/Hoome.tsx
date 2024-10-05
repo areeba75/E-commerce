@@ -4,8 +4,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import { LuCircleDashed } from "react-icons/lu";
 import { Link } from 'react-router-dom';
-import "./Dashboard.css"
-import clouth from "./clouth.jpg"
+import "./Dashboard.css";
+import clouth from "./clouth.jpg";
 
 
 const Home = () => {
@@ -56,31 +56,39 @@ const AddProductCard = () => {
           heading='Add your first Product'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Add product`}
+          secondButton={`Import products`}
         />
         <AddProductBox
           heading='Add a custom domain'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Generate custom themes`}
+          secondButton={`Brows premade themes`}
         />
         <AddProductBox
           heading='Customize your online store'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Add domain`}
         />
         <AddProductBox
           heading='Set your shipping rates'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Set shipping rates`}
         />
         <AddProductBox
           heading='Set up a payment provider'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Set up Payments`}
         />
         <AddProductBox
           heading='Place a test order'
           discription={`Write a description, add photos, and set pricing for the products you plan to sell.`}
           image={clouth}
+          addButton={`Learn about test orders`}
         />
       </div>
     </>
@@ -89,11 +97,13 @@ const AddProductCard = () => {
 
 interface AddProductBoxPropse {
   heading: string,
-  discription: string
-  image?: string
+  discription: string,
+  image?: string,
+  addButton: string,
+  secondButton?: string
 }
 
-const AddProductBox = ({ heading, discription, image }: AddProductBoxPropse) => {
+const AddProductBox = ({ heading, discription, image, addButton,secondButton }: AddProductBoxPropse) => {
   return (
     <>
       <Accordion slotProps={{ heading: { component: 'h4' } }}>
@@ -116,8 +126,8 @@ const AddProductBox = ({ heading, discription, image }: AddProductBoxPropse) => 
                 <p className='font-semibold text-black/60'>{discription} <span className='text-[#4C8BDE]'><a href="#">Learn more</a></span></p>
               </div>
               <div className='font-medium text-sm p-1 space-x-2'>
-                <Link to={'/admin/order'}><button className='bg-black rounded-lg text-white px-3 py-1 text-sm'>Add product</button></Link>
-                <button className='px-2 py-1 text-sm rounded-lg text-black/70 text-black border border-gray-400'>Import products</button>
+                <Link to={'/admin/order'}><button className='bg-black rounded-lg text-white px-3 py-1 text-sm'>{addButton}</button></Link>
+                <button className='px-2 py-1 text-sm rounded-lg text-black/70 text-black '>{secondButton}</button>
               </div>
             </div>
             <div className='hidden sm:block w-[34%] sm:px-4 justify-end items-center'>
