@@ -111,9 +111,12 @@ const Order = () => {
     setShowAnalytic(!showAnalytic);
     setMoreAction(false);
   };
-  const showMoreAction = () => {
-    if (!moreAction) {
-      openDropDown()
+
+
+  const manageMoreAction = () =>{
+    if(!moreAction && !showAnalytic){
+      setMoreAction(!moreAction)
+    }else{
     }
   }
 
@@ -154,7 +157,7 @@ const Order = () => {
           </div>
           <div className='md:w-[40%]'>
             <div className='flex flex-col justify-end items-end space-y-3'>
-              <button onClick={showMoreAction} className='flex bg-[#e3e3e3] hover:bg-[#d4d4d4] text-xs font-bold rounded-lg px-2 py-1 text-[#303030]'>
+              <button onClick={manageMoreAction} className='flex bg-[#e3e3e3] hover:bg-[#d4d4d4] text-xs font-bold rounded-lg px-2 py-1 text-[#303030]'>
                 More Action <img src={arrow_down} alt="" className='h-3 w-3 m-1' />
               </button>
 

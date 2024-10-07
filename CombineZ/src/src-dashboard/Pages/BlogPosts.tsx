@@ -17,7 +17,7 @@ const BlogPosts = () => {
         
             <div className="bg-white py-10 rounded-xl border">
                 <div>
-                    <img src={Blog_img} className="m-auto" />  
+                    <img src={Blog_img} className="m-auto" />
                 </div>
                 <div className="text-center">
                     <p className="text-base font-semibold">Write a blog post</p>

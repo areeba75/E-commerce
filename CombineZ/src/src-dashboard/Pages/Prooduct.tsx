@@ -3,7 +3,7 @@ import { useState } from "react";
 import OrderTable from "../Components/OrderTable";
 import { Link } from "react-router-dom";
 import React from "react";
-import "./Dashboard.css"
+import "./Dashboard.css";
 
 
 const Product: React.FC = () => {

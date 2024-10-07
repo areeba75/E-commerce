@@ -8,7 +8,6 @@ import "./Dashboard.css"
 
 
 
-
 const Collection = () => {
     
 
@@ -44,7 +43,7 @@ const Collection = () => {
                         </tr>
                     </thead>
                     <tr className="w-full bg-white border">
-                    <Link className="" to={'/'}><td className="py-4 flex"><MdOutlineAddHome className="text-2xl mr-2" /> Home Page</td></Link>
+                    <Link className="" to={'/admin'}><td className="py-4 flex"><MdOutlineAddHome className="text-2xl mr-2" /> Home Page</td></Link>
                         <td className="py-4">0</td>
                         <td className="py-4">0</td>
                     </tr>

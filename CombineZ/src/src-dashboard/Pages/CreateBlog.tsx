@@ -35,8 +35,7 @@ const CreateBlog = () => {
   const [isDropdownOpan, setIsDropdownOpan] = useState<boolean>(false);
 
   const droopdownItems: DropdownItam[] = [
-    { id: 1, label: "Default Blog Posts" },
-  
+    { id: 1, label: "Default Blog Posts" }
   ];
 
   const haandleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
